@@ -1,0 +1,36 @@
+@import "components_styles/Fpanel_style.scss";
+@import "../Scss/components_styles/flexbox.scss";
+@import "config";
+
+.panel-info {
+  margin: 0 10px 0 10px;
+}
+
+.form_field {
+  @include logReg;
+
+  input {
+    width: 300px;
+    margin: 10px 0 10px 0;
+    border-radius: 5px;
+    color: black;
+    height: 25px;
+  }
+  .buttons_field {
+    @include buttonsConf;
+  }
+}
+.info_pannel {
+  margin: 0 10px 0 10px;
+}
+.my-1 {
+  margin-top: 25px;
+  a:hover {
+    color: $button-color;
+  }
+}
+.btn-secondary:hover {
+  @include btnSecondHover;
+}
+
+@import "buttons";

@@ -1,0 +1,64 @@
+@import "config";
+@import "buttons";
+@import "../Scss/components_styles/navbar.scss";
+@import "../Scss/components_styles/flexbox.scss";
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: $neutral-color;
+  font-size: 20px;
+}
+
+.landing {
+  div,
+  h1,
+  h2,
+  h4,
+  form,
+  p {
+    margin: 20px 0 20px 0;
+  }
+
+  margin: auto;
+  max-width: 1100px;
+
+ .banner{
+        background-color: $button-color;
+        margin: 35px 0 35px 0;
+    }
+
+  input,textarea{
+      color: $terciary-color;
+  }
+
+  input[type=text], input[type=date]{
+    height: 35px;
+      width: 95%;
+  }
+  
+  textarea{width: 95%;}
+}
+
+.buttons{
+    @include addButtons;
+
+    .submit{
+        margin-right: 5px;
+        background-color: $button-color;
+        border-style: none;
+        padding: 10px;
+    }
+    .submit:hover{
+        color:$info-color;
+    }
+    .getouthere{
+        margin-left: 5px;
+        background-color: lighten($neutral-color, 10%);
+        padding: 10px;
+    }
+    .getouthere:hover{
+        color: $button-color;
+    }
+}

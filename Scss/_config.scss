@@ -1,0 +1,80 @@
+$primary-color: #353a40;
+$secondary-color: darken(
+  #c85227,
+  10
+); //rgb(238, 119, 9); //rgb(255, 157, 0); //#ff8700;
+$button-color: #c36800;
+$terciary-color: black;
+$neutral-color: #1f1f1f;
+$info-color: white;
+$banner-color: rgb(71, 143, 226);
+$like-color: rgb(23, 126, 243);
+$comments-color: rgb(45, 209, 45);
+$danger-color: rgb(158, 29, 29);
+$primary-image: url("../imgs/wallpaper.jpg");
+$font-stack: Arial, Helvetica, sans-serif;
+
+* {
+  font-family: $font-stack;
+}
+
+@function set-text-color($color) {
+  //check the lightness
+  @if (lightness($color) > 70) {
+    @return #333;
+  } @else {
+    @return #fff;
+  }
+}
+
+//set login & register configs
+@mixin buttonsConf {
+  padding-top: 20px;
+}
+@mixin btnSecondHover {
+  color: $terciary-color;
+  background-color: $button-color;
+}
+
+
+//Set background & text color
+@mixin set-background($color) {
+  background-color: $color;
+  color: set-text-color($color);
+}
+@function set-panel-color($color) {
+  //check the lightness
+  @if (lightness($color) > 50) {
+    @return rgb(0, 0, 0);
+  } @else {
+    @return rgb(251, 251, 251);
+  }
+}
+
+//panel profile dimensions
+@mixin set-panel-info() {
+  margin: 10px 0 10px 0;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+//panel profiles dimensions
+@mixin set-profiles-panel() {
+  padding: 10px;
+  margin: 30px;
+  width: 40%;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+
+  background-color: $secondary-color;
+  img {
+    border-radius: 50%;
+  }
+}

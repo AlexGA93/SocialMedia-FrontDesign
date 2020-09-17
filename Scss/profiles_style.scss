@@ -1,0 +1,26 @@
+@import "components_styles/Fpanel_style.scss";
+@import "config";
+@import "../Scss/components_styles/flexbox.scss";
+
+.title_section {
+  margin: 0 10px 0 10px;
+  font-size: 130%;
+}
+.landing {
+  @include profLand;
+
+  a:hover {
+    color: $terciary-color;
+  }
+
+  .dev_panel-1 {
+    @include set-profiles-panel();
+  }
+  .dev_panel-2 {
+    @include set-profiles-panel();
+  }
+  .dev_panel-3 {
+    @include set-profiles-panel();
+  }
+}
+@import "buttons";

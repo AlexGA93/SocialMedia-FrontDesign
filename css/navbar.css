@@ -1,0 +1,1 @@
+*{box-sizing:border-box;margin:0;padding:0;text-decoration:none;color:white}nav{display:flex;flex-direction:row;flex-wrap:wrap;align-items:center;justify-content:space-between;padding:0 15px 0 15px;font-size:20px}nav ul{display:flex;flex-direction:row;flex-wrap:wrap;align-items:center;list-style-type:none}nav ul li{padding:15px}

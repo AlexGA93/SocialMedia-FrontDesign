@@ -1,0 +1,29 @@
+@import "../config";
+@import "../components_styles/navbar.scss";
+
+body {
+  background: $primary-image;
+  //   background-size: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center top;
+
+  font-family: $font-stack; //calling variable to font stuff
+  line-height: 1.6;
+}
+
+.panel {
+  font-size: 25px;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+
+  h1 {
+    text-align: center;
+    padding-bottom: 5px;
+  }
+}

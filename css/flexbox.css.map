@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../Scss/components_styles/flexbox.scss"
+    ],
+    "names": [],
+    "file": "flexbox.css"
+}

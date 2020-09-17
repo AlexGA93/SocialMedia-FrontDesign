@@ -1,0 +1,98 @@
+@import "config";
+@import "components_styles/Fpanel_style.scss";
+@import "../Scss/components_styles/flexbox.scss";
+
+body {
+  background-color: $neutral-color;
+}
+
+.landing {
+  max-width: 1100px;
+  margin: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  overflow: hidden;
+  padding: 0 2rem;
+  margin-top: 6rem;
+  margin-bottom: 3rem;
+}
+
+.btn-primary {
+  width: 130px;
+  border-radius: 5px;
+  padding: 8px 20px;
+  margin: 10px;
+}
+.post {
+  background-color: $secondary-color;
+
+  .text_section {
+    padding: 10px 0 10px 0;
+    width: 85%;
+
+    .text {
+      align-items: center;
+    }
+  }
+  .photo_section {
+    @include postPhoto;
+
+    padding: 10px;
+
+    h4 {
+      padding-left: 10px;
+    }
+
+    img {
+      border-radius: 50%;
+      width: auto;
+      height: 90px;
+    }
+  }
+}
+
+
+p {
+  margin-left: 10px;
+}
+
+
+.banner {
+  background-color: $banner-color;
+
+  h3 {
+    margin: 10px;
+    padding: 15px;
+  }
+}
+.form {
+  @include postForm;
+
+  textarea {
+    color: $terciary-color;
+  }
+  .btn {
+    margin: 10px 0 10px 0;
+
+  }
+}
+.comment {
+  @include postComment;
+
+  margin: 20px 0 20px 0;
+}
+.date-container {
+  .date_section {
+    margin: 0 20px 20px 20px;
+  }
+}
+
+button {
+  width: 50px;
+  border-radius: 5px;
+  padding: 8px 20px;
+  margin: 0 20px 20px 20px;
+  background-color: $danger-color;
+}
+
+@import "buttons";

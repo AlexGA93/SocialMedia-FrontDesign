@@ -1,0 +1,9 @@
+//script to make responsive stuff
+@media (max-width: 700px) {
+  body {
+    height: 500px;
+    .panel {
+      text-align: center;
+    }
+  }
+}

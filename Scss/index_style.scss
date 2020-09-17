@@ -1,0 +1,25 @@
+@import "components_styles/Fpanel_style.scss";
+@import "../Scss/components_styles/flexbox.scss";
+@import "config";
+
+.panel {
+  &-buttons {
+    @include indButtons;
+
+    padding-top: 50px;
+    width: 50%;
+
+    a {
+      color: set-text-color(
+        $secondary-color
+      ); 
+    }
+    a:hover {
+      color: $terciary-color;
+    }
+  }
+}
+
+@import "buttons";
+//importing media for responsive
+@import "mobile";

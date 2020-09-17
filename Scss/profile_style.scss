@@ -1,0 +1,72 @@
+@import "components_styles/Fpanel_style.scss";
+@import "config";
+@import "../Scss/components_styles/flexbox.scss";
+
+//Social media icons
+section {
+  color: set-panel-color($info-color);
+}
+.btn-primary {
+  width: 100px;
+  border-radius: 5px;
+  padding: 8px 20px;
+  margin: 10px;
+}
+
+.profile-grid {
+  @include profGrid;
+
+  text-align: center;
+}
+.top_panel {
+
+  background-color: $secondary-color;
+  @include set-panel-info();
+
+  .top_info {
+    padding: 10px 0 10px 0;
+
+    .round-img {
+      border-radius: 50%;
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.about_panel {
+  background-color: $primary-color;
+  @include set-panel-info();
+}
+.exerience_panel {
+  background-color: $primary-color;
+  @include set-panel-info();
+}
+.education_panel {
+  background-color: $primary-color;
+  @include set-panel-info();
+}
+.github_panel {
+  background-color: $primary-color;
+  @include set-panel-info();
+}
+.skills {
+  @include profSkills;
+  div {
+    padding: 0 5px 0 5px;
+    img {
+      height: 20px;
+      width: 15px;
+    }
+  }
+}
+.repo {
+  padding: 15px 0 15px 0;
+}
+.points {
+  ul {
+    @include profPoints;
+  }
+}
+
+@import "buttons";

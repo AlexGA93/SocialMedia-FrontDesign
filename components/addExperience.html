@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/addInfo_style.css">
+    </head>
+    <body>
+        <!-- navbar -->
+        <nav>
+            <!-- Title -->
+            <h1 class="title"><a href="index.html">JayBook!</a></h1>
+            <ul>
+              <!-- Developers Link -->
+              <li><a href="profiles.html">Developers</a></li>
+              <!-- Posts Link -->
+              <li><a href="posts.html">Posts</a></li>
+              <!-- Dashboard link -->
+              <li><a href="dashboard.html">Dashboard</a></li>
+              <!-- Logout link -->
+              <li><a href="logout.html">Logout</a></li>
+            </ul>
+          </nav>
+        <!-- landing -->
+        <div class="landing">
+            <h1>Add An Experience </h1>
+            <p class="banner">Add any developer/programming positions that you have had in the past.</p>
+            <small>* required field</small>
+            <form class ="form">
+                <!-- job -->
+                <div class="job">
+                    <input
+                        type="text"
+                        placeholder="* Job Title"
+                        name="job"
+                        required
+                    />
+                </div>
+                <!-- Company -->
+                <div class="company">
+                    <input
+                        type="text"
+                        placeholder="* Company"
+                        name="company"
+                        required
+                    />
+                </div>
+                <!-- Location -->
+                <div class="location">
+                    <input type="text" placeholder="Field Of Study" name="location" />
+                </div>
+                <!-- From Date -->
+                <h4 class="fromDate">From Date</h4>
+                <div class=from-date>
+                    <input type="date" name="from">
+                </div>
+                <!-- check Current School or Bootcamp -->
+                <input type="checkbox" id="current">
+                <label for="current">Current School or Bootcamp</label>
+                <!-- To Date -->
+                <h4 class="toDate">To Date</h4>
+                <div class=to-date>
+                    <input type="date" name="from">
+                </div>
+                <!-- textarea description -->
+                <textarea
+                name="description"
+                cols="30"
+                rows="5"
+                placeholder="Job Description"></textarea>
+                <!-- buttons submit & cGo back -->
+                <div class="buttons">
+                    <input class="submit" type="submit" value="Submit">
+                    <a class="getouthere" href="dashboard.html">Go Back</a>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

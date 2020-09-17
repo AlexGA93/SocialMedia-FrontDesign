@@ -1,0 +1,96 @@
+
+//index configuration
+@mixin indButtons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+//login & register configurations
+@mixin logReg {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+//profiles landing
+@mixin profLand{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+//profile's configurations
+@mixin profGrid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+@mixin profSkills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+@mixin profPoints {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+//post's configurations
+@mixin postPhoto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin postForm {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+@mixin postComment {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+//posts configuration
+@mixin postsImg {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    text-align: center;
+}
+
+//dashboard's configurations
+@mixin dashButtons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+//addEducation & addExperience & createProfile configurations
+@mixin addButtons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+//createProfile's configuration
+@mixin crtContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

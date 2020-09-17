@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/dashboard_style.css" />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <!-- Title -->
+      <h1 class="title"><a href="index.html">JayBook!</a></h1>
+      <ul>
+        <!-- Developers Link -->
+        <li><a href="profiles.html">Developers</a></li>
+        <!-- Posts Link -->
+        <li><a href="posts.html">Posts</a></li>
+        <!-- Dashboard link -->
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <!-- Logout link -->
+        <li><a href="logout.html">Logout</a></li>
+      </ul>
+    </nav>
+    <!-- Landing -->
+    <div class="landing">
+      <!-- title -->
+      <h1 class="title">Dashboard</h1>
+      <!-- subtitle -->
+      <p class="subtitle">Welcome John Doe</p>
+      <!-- buttons section -->
+      <div class="buttonsPanel">
+        <a class="btn-terciary btn" href="editProfile.html">Edit Profile</a>
+        <a class="btn-terciary btn" href="addExperience.html">Add Experience</a>
+        <a class="btn-terciary btn" href="addEducation.html">Add Education</a>
+      </div>
+      <!-- experience credentials -->
+      <h2>Experience Credentials</h2>
+      <!-- <div class="experience-credentials">
+        <div class="element a">Company</div>
+        <div class="element b hide-sm">Title</div>
+        <div class="element c hide-sm">Years</div>
+        <div class="element d"></div>
+        <div class="element e">Tech Guy Web Solutions</div>
+        <div class="element f hide-sm">Senior Developer</div>
+        <div class="element g hide-sm">02-03-2009 - 01-02-2014</div>
+        <div class="element h"><a class="btn-danger" href="">Delete</a></div>
+        <div class="element i">John Doe</div>
+        <div class="element j hide-sm">Instructor & Developer</div>
+        <div class="element k hide-sm">02-03-2015 - Now</div>
+        <div class="element l"><a class="btn-danger" href="">Delete</a></div>
+      </div> -->
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Company</th>
+            <th class="hide-sm">Title</th>
+            <th class="hide-sm">Years</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Tech Guy Web Solutions</td>
+            <td class="hide-sm">Senior Developer</td>
+            <td class="hide-sm">
+              02-03-2009 - 01-02-2014
+            </td>
+            <td>
+              <a class="btn-danger" href="">Delete</a>
+            </td>
+          </tr>
+          <tr>
+            <td>Traversy Media</td>
+            <td class="hide-sm">Instructor & Developer</td>
+            <td class="hide-sm">
+              02-03-2015 - Now
+            </td>
+            <td>
+              <a class="btn-danger" href="">Delete</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <!-- education credentials-->
+      <h2>Education Credentials</h2>
+      <!--<div class="education-credentials">
+        <div class="element a">Company</div>
+        <div class="element b hide-sm">Title</div>
+        <div class="element c hide-sm">Years</div>
+        <div class="element d"></div>
+        <div class="element e">Tech Guy Web Solutions</div>
+        <div class="element f hide-sm">Senior Developer</div>
+        <div class="element g hide-sm">02-03-2009 - 01-02-2014</div>
+        <div class="element h"><a class="btn-danger" href="">Delete</a></div>
+      </div> -->
+      <table class="table">
+        <thead>
+          <tr>
+            <th>School</th>
+            <th class="hide-sm">Degree</th>
+            <th class="hide-sm">Years</th>
+            <th />
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Northern Essex</td>
+            <td class="hide-sm">Associates</td>
+            <td class="hide-sm">
+              02-03-2007 - 01-02-2009
+            </td>
+            <td>
+              <a class="btn-danger" href="">Delete</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <!-- delete account -->
+      <a class="btndngr" href="">Delete My Acount</a>
+    </div>
+  </body>
+</html>

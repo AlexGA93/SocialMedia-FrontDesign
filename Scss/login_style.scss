@@ -1,0 +1,26 @@
+@import "components_styles/Fpanel_style.scss";
+@import "../Scss/components_styles/flexbox.scss";
+
+.form {
+  @include logReg;
+
+  input {
+    border-radius: 5px;
+    color: black;
+    height: 25px;
+    width: 100%;
+  }
+  .buttons_field {
+    padding-top: 20px;
+  }
+  .not_account:hover {
+    color: $secondary-color;
+  }
+  .btn-secondary:hover {
+    color: $terciary-color;
+    background-color: $button-color;
+  }
+}
+
+@import "buttons";
+@import "config";

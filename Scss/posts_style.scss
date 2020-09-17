@@ -1,0 +1,100 @@
+@import "config";
+@import "buttons";
+@import "components_styles/Fpanel_style.scss";
+@import "../Scss/components_styles/flexbox.scss";
+
+body {
+  background-color: $neutral-color;
+}
+
+.landing {
+  margin: auto;
+  max-width: 1100px;
+
+  .title {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+  .subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .banner {
+    background-color: $banner-color;
+    font-size: 1.3rem;
+    box-sizing: border-box;
+    padding: 10px 0 10px 0;
+    margin-bottom: 1rem;
+  }
+  .btn {
+    margin: 1rem 0 1em 0;
+    padding: 0.4rem 1.3rem;
+    background: $button-color;
+  }
+  .post {
+    background-color: $secondary-color;
+    padding: 30px 0 30px 0;
+    margin: 20px 10px 20px 10px;
+
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+
+    .image_section {
+      @include postsImg;
+
+      margin: 5px;
+    }
+    .comment_section {
+      margin: 5px;
+
+      .date {
+        margin: 15px 0 15px 0;
+      }
+      button {
+        height: 35px;
+        width: 55px;
+        margin-right: 20px;
+        border: none;
+        color: white;
+        cursor: pointer;
+
+        .fa-thumbs-up {
+          font-size: 25px;
+        }
+        .fa-thumbs-down {
+          font-size: 25px;
+        }
+        .fa-comments {
+          font-size: 25px;
+        }
+        .fa-window-close {
+          font-size: 25px;
+        }
+      }
+      .comments {
+        width: 95px;
+      }
+    }
+    .like {
+      background-color: $like-color;
+    }
+    .dislike {
+      background-color: $danger-color;
+    }
+    .comments {
+      background-color: $comments-color;
+    }
+    .close {
+      background-color: $danger-color;
+    }
+  }
+}
+textarea {
+  color: $terciary-color;
+  width: 100%;
+}
+img {
+  border-radius: 50%;
+  width: 100px;
+}
