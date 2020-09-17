@@ -12,14 +12,4 @@ git clone [repo clonning address]
 
 ## Images
 
-![Index](/imgs/samples/1index.JPG)
-![Login](/imgs/samples/2login.JPG)
-![Register](/imgs/samples/3register.JPG)
-![Profiles](/imgs/samples/4profiles.JPG)
-![Profile](/imgs/samples/5profile.JPG)
-![Post](/imgs/samples/6post.JPG)
-![Posts](/imgs/samples/7posts.JPG)
-![Dashboard](/imgs/samples/8dashboard.JPG)
-![Add Education](/imgs/samples/9addEd.JPG)
-![Add Experience](/imgs/samples/10addExp.JPG)
-![Create Profile](/imgs/samples/11createProfile.JPG)
+![1index](https://user-images.githubusercontent.com/32788331/93464315-46603500-f8e9-11ea-90b6-9c0be6816e7b.JPG)
